@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  	<definition name="basemaster" template="/WEB-INF/views/sites/masterpage.jsp">
+	    <put-attribute name="header" value="/WEB-INF/views/sites/sections/header.jsp" />
+	    <put-attribute name="content" value="" />
+	    <put-attribute name="footer" value="/WEB-INF/views/sites/sections/footer.jsp" />
+  	</definition>
+  	<definition name="home" extends="basemaster">
+    	<put-attribute name="content" value="/WEB-INF/views/sites/components/home.jsp" />
+  	</definition>
+  	<definition name="login" extends="basemaster">
+    	<put-attribute name="content" value="/WEB-INF/views/sites/components/my-account/login.jsp" />
+  	</definition>
+  	<definition name="resetpassword" extends="basemaster">
+    	<put-attribute name="content" value="/WEB-INF/views/sites/components/my-account/resetpassword.jsp" />
+  	</definition>
+  	<definition name="benifit" extends="basemaster">
+    	<put-attribute name="content" value="/WEB-INF/views/sites/components/claim-form/benifit.jsp" />
+  	</definition>
+  	<definition name="profile-employee" extends="basemaster">
+    	<put-attribute name="content" value="/WEB-INF/views/sites/components/profile-employee/profile-employee.jsp" />
+  	</definition>
+  	<definition name="profile-CPD" extends="basemaster">
+    	<put-attribute name="content" value="/WEB-INF/views/sites/components/profile-CPD/profile-CPD.jsp" />
+  	</definition>
+</tiles-definitions>
